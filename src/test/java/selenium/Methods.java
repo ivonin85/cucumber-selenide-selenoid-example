@@ -68,6 +68,10 @@ public class Methods {
         Actions actions = new Actions(driver);
         actions.moveToElement(wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(cssSelector)))).perform();
     }
+    public void actionByClassName(String className){
+        Actions actions = new Actions(driver);
+        actions.moveToElement(wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(className)))).perform();
+    }
 
     public void actionByXPath(String xPath){
         Actions actions = new Actions(driver);
@@ -114,46 +118,14 @@ public class Methods {
         selectOrganization.selectByValue(Value);
     }
 
-    // --- \\ СРАВНЕНИЯ // ---
-    // проверка на соответствие, находим элемент через cssSelector, читаем текст и сравниваем с нашим
-    public void findByCssSelectorGetTextAndEquals(String CssSelector, String equalsText) {
-        WebElement elem = driver.findElement(By.cssSelector(CssSelector));
-        String element = elem.getText();
-        Assert.assertTrue(element.equals(equalsText));
-    }
-    // проверка на соответствие, находим элемент через xPath, читаем текст и сравниваем с нашим
 
-    public void findByXPatchGetTextAndEquals(String xPathSelector, String equalsText) {
-        WebElement elem = driver.findElement(By.xpath(xPathSelector));
-        String element = elem.getText();
-        Assert.assertTrue(element.equals(equalsText));
-    }
 
-    public void GetUrl(String GetUrl) {
 
-        driver.get(GetUrl);
-    }
 
-    public void findOrganization(String Id, String ClassName, String Value) {
-        WebElement element = driver.findElements(By.id(Id)).get(0);
-        Select selectOrganization = new Select(element);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(ClassName)));
-        selectOrganization.selectByValue(Value);
-    }
 
-    public void findByTwoXpatClikcActionAndClick(String FirstElement, String NextElement) {
-        WebElement element = driver.findElement(By.xpath(FirstElement));
-        element.click();
 
-        Actions elementNew = new Actions(driver);
-        elementNew.moveToElement(element).build().perform();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(NextElement))).click();
-    }
 
-    public void assertTrue(String textOne, String textTwo) {
 
-        Assert.assertTrue(textOne.equals(textTwo));
-    }
 
     // даннаый метод позволяет при помощи Javascript
     public void scroll() {
@@ -172,6 +144,16 @@ public class Methods {
         xPath("//*[@id=\"y-map\"]/ymaps/ymaps/ymaps/ymaps[4]/ymaps[4]/ymaps/div/div[1]/button").click();
 
 
+    }
+
+    public void jsAlert(String alert){
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("alert('" + alert + "');");
+    }
+
+    public void javaScript(String javascript){
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript(javascript);
     }
 
 

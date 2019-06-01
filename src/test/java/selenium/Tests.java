@@ -2,20 +2,22 @@ package selenium;
 
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
+import selenium.pages.GoogleSearch;
+import selenium.pages.GoogleTranslate;
 
-public class WeatherTest {
+public class Tests {
     private WebDriverSettings settings;
     private ChromeDriver driver;
     String key = "Погода в Москве";
     String url = "https://www.google.com/";
 
-    public WeatherTest(){
+    public Tests(){
         this.settings = new WebDriverSettings();
         this.driver = this.settings.driver();
     }
     @Test
     public void weatherTest(){
-        GooglePage googlePage = new GooglePage(driver);
+        GoogleSearch googlePage = new GoogleSearch(driver);
         driver.get(url);
         googlePage.weatherSearch(key);
         googlePage.weatherResult();
@@ -25,7 +27,7 @@ public class WeatherTest {
     }
     @Test
     public void googleTest(){
-        Google google = new Google(driver);
+        GoogleSearch google = new GoogleSearch(driver);
         String name = "q";
         String key = "Усы Пескова";
         System.out.println("----------///// Начало теста /////----------");
@@ -40,7 +42,7 @@ public class WeatherTest {
     }
     @Test
     public void googleTemperatureMoscow(){
-        Google google = new Google(driver);
+        GoogleSearch google = new GoogleSearch(driver);
         String name = "q";
         String key = "Погода в Москве";
         System.out.println("----------///// Начало теста /////----------");
@@ -56,7 +58,7 @@ public class WeatherTest {
 
     @Test
     public void googleTemperatureVolgograd(){
-        Google google = new Google(driver);
+        GoogleSearch google = new GoogleSearch(driver);
         String name = "q";
         String key = "Погода в Волгограде";
         System.out.println("----------///// Начало теста /////----------");
@@ -76,13 +78,17 @@ public class WeatherTest {
      **/
 
     @Test
-    public void googleTranslate() {
-        Google google = new Google(driver);
+    public void googleTranslate() throws InterruptedException{
+        GoogleTranslate googleTranslate = new GoogleTranslate(driver);
         String key = "Какая погода в Москве";
+        String language = "английский";
         System.out.println("----------///// Начало теста /////----------");
         driver.get("https://translate.google.com/");
-        google.sendText().sendKeys(key);
-        System.out.println(google.getText().getText());
+        googleTranslate.sendText().sendKeys(key);
+        googleTranslate.selLang(language);
+        //googleTranslate.selectLanguage();
+        Thread.sleep(1500);
+        System.out.println(googleTranslate.getText().getText());
         System.out.println("----------///// Конец теста /////----------");
         driver.quit();
 

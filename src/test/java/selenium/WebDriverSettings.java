@@ -1,6 +1,7 @@
 package selenium;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class WebDriverSettings {
     private ChromeDriver driver;
@@ -17,6 +18,10 @@ public class WebDriverSettings {
             chromeDriver = System.getProperty("user.dir")+"/chromedriver/chromedriver.exe";
         } else chromeDriver = System.getProperty("user.dir")+"/chromedriver/chromedriver";
         System.setProperty("webdriver.chrome.driver", chromeDriver);
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+
         this.driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();

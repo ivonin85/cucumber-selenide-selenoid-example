@@ -1,10 +1,11 @@
-package selenium;
+package selenium.pages;
 
 import org.openqa.selenium.*;
+import selenium.Methods;
 
-public class GooglePage extends Methods {
+public class GoogleSearch extends Methods {
 
-    public GooglePage(WebDriver driver) {
+    public GoogleSearch(WebDriver driver) {
 
         super(driver);
     }
@@ -20,12 +21,16 @@ public class GooglePage extends Methods {
 
     public void webelementList(){
 
-        listByClassName();
+        listByClassName("LC20lb");
+        for (WebElement element: listByClassName("LC20lb"))
+            System.out.println(element.getText());
     }
 
     public void showGoogle (String name, String key){
 
-        findByNameSendKeyAndClikcEnter(name, key);
+        //findByNameSendKeyAndClikcEnter(name, key);
+        name(name).sendKeys(key);
+        name(name).submit();
     }
     public String showTemperature(){
 
@@ -41,21 +46,8 @@ public class GooglePage extends Methods {
 
     }
 
-    public WebElement sendText(){
-        return id("source");
-    }
 
-    public WebElement getText(){
 
-        return cssSelector(".tlid-translation.translation");
-    }
-
-    public void js1(){
-        javaScript();
-    }
-    public void js2(){
-        javaScriptTwo();
-    }
 
 
 
