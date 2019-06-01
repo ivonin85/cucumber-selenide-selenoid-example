@@ -30,13 +30,13 @@ public class Tests {
         GoogleSearch google = new GoogleSearch(driver);
         String name = "q";
         String key = "Усы Пескова";
-        System.out.println("----------///// Начало теста /////----------");
+        System.out.println("----------///// Start test /////----------");
         driver.get("https://www.google.ru/");
         // ищем что-то
         google.showGoogle(name, key);
         // выводим все заголовки со страницы
         google.webelementList();
-        System.out.println("----------///// Конец теста /////----------");
+        System.out.println("----------///// End test /////----------");
         driver.quit();
 
     }
@@ -45,13 +45,13 @@ public class Tests {
         GoogleSearch google = new GoogleSearch(driver);
         String name = "q";
         String key = "Погода в Москве";
-        System.out.println("----------///// Начало теста /////----------");
+        System.out.println("----------///// Start test /////----------");
         driver.get("https://www.google.ru/");
         // ищем что-то
         google.showGoogle(name, key);
         System.out.println((key + " " + google.showTemperature() + " °C"));
         google.displayTemperature(key + " " + google.showTemperature() + " °C");
-        System.out.println("----------///// Конец теста /////----------");
+        System.out.println("----------///// End test /////----------");
         driver.quit();
 
     }
@@ -61,13 +61,13 @@ public class Tests {
         GoogleSearch google = new GoogleSearch(driver);
         String name = "q";
         String key = "Погода в Волгограде";
-        System.out.println("----------///// Начало теста /////----------");
+        System.out.println("----------///// Start test /////----------");
         driver.get("https://www.google.ru/");
         // ищем что-то
         google.showGoogle(name, key);
         System.out.println((key + " " + google.showTemperature() + " °C"));
         google.displayTemperature(key + " " + google.showTemperature() + " °C");
-        System.out.println("----------///// Конец теста /////----------");
+        System.out.println("----------///// End test /////----------");
         driver.quit();
 
     }
@@ -80,16 +80,16 @@ public class Tests {
     @Test
     public void googleTranslate() throws InterruptedException{
         GoogleTranslate googleTranslate = new GoogleTranslate(driver);
-        String key = "Какая погода в Москве";
-        String language = "английский";
-        System.out.println("----------///// Начало теста /////----------");
+        String key = "Какая погода в Москве?";
+        String language = "финский";
+        System.out.println("----------///// Start test /////----------");
         driver.get("https://translate.google.com/");
         googleTranslate.sendText().sendKeys(key);
         googleTranslate.selLang(language);
         //googleTranslate.selectLanguage();
         Thread.sleep(1500);
         System.out.println(googleTranslate.getText().getText());
-        System.out.println("----------///// Конец теста /////----------");
+        System.out.println("----------///// End test /////----------");
         driver.quit();
 
     }

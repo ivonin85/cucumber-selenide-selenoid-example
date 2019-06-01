@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57a2387e-2a31-4551-bd7d-c4721cde4730" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/GooglePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/Methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/WeatherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/Methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/Methods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/Tests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+            <state relative-caret-position="-407">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Methods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+            <state relative-caret-position="239">
+              <caret line="155" column="21" selection-start-line="154" selection-start-column="8" selection-end-line="155" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -176,7 +170,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559429586293" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559432452437" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../yandex" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -300,15 +294,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_googleTranslate - 2019.06.02 at 01h 27m 42s.xml">
-      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_googleTranslate - 2019.06.02 at 01h 29m 44s.xml">
-      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_googleTranslate - 2019.06.02 at 01h 31m 23s.xml">
-      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Tests_googleTranslate - 2019.06.02 at 01h 36m 42s.xml">
       <configuration name="Tests.googleTranslate" configurationId="JUnit" />
     </history-entry>
@@ -328,6 +313,15 @@
       <configuration name="Tests.googleTranslate" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Tests_googleTranslate - 2019.06.02 at 01h 50m 26s.xml">
+      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_googleTranslate - 2019.06.02 at 02h 03m 37s.xml">
+      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_googleTranslate - 2019.06.02 at 02h 10m 54s.xml">
+      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_googleTranslate - 2019.06.02 at 02h 11m 37s.xml">
       <configuration name="Tests.googleTranslate" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -399,16 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Methods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
@@ -421,10 +405,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="155" column="21" selection-start-line="154" selection-start-column="8" selection-end-line="155" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+        <state relative-caret-position="-407">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
