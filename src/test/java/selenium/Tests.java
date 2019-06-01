@@ -81,7 +81,7 @@ public class Tests {
     public void googleTranslate() throws InterruptedException{
         GoogleTranslate googleTranslate = new GoogleTranslate(driver);
         String key = "Какая погода в Москве?";
-        String language = "финский";
+        String language = "английский";
         System.out.println("----------///// Start test /////----------");
         driver.get("https://translate.google.com/");
         googleTranslate.sendText().sendKeys(key);
