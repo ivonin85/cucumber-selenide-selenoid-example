@@ -16,7 +16,45 @@ public class GooglePage extends Methods {
     public String weatherResult(){
         return id("wob_tm").getText();
 
+    }
 
+    public void webelementList(){
+
+        listByClassName();
+    }
+
+    public void showGoogle (String name, String key){
+
+        findByNameSendKeyAndClikcEnter(name, key);
+    }
+    public String showTemperature(){
+
+        return id("wob_tm").getText();
+    }
+
+    public void displayTemperature(String alert){
+        try {
+            jsAlert(alert);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public WebElement sendText(){
+        return id("source");
+    }
+
+    public WebElement getText(){
+
+        return cssSelector(".tlid-translation.translation");
+    }
+
+    public void js1(){
+        javaScript();
+    }
+    public void js2(){
+        javaScriptTwo();
     }
 
 
