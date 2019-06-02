@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57a2387e-2a31-4551-bd7d-c4721cde4730" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/pages/Odobrim.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/pages/Odobrim.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="98" column="25" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
+            <state relative-caret-position="300">
+              <caret line="107" column="42" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,15 +37,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="29" column="117" selection-start-line="29" selection-start-column="117" selection-end-line="29" selection-end-column="117" />
+            <state relative-caret-position="130">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#473#474#0" expanded="true" />
                 <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
                 <element signature="e#637#638#0" expanded="true" />
                 <element signature="e#672#673#0" expanded="true" />
               </folding>
@@ -117,8 +121,8 @@
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/Tests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" />
       </list>
     </option>
   </component>
@@ -187,7 +191,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559483623077" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559489030369" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../yandex" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -314,21 +318,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_odobrimTest - 2019.06.02 at 15h 01m 17s.xml">
-      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_odobrimTest - 2019.06.02 at 15h 07m 31s.xml">
-      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_odobrimTest - 2019.06.02 at 16h 15m 07s.xml">
-      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_odobrimTest - 2019.06.02 at 16h 16m 53s.xml">
-      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_odobrimTest - 2019.06.02 at 16h 22m 52s.xml">
-      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Tests_odobrimTest - 2019.06.02 at 16h 25m 21s.xml">
       <configuration name="Tests.odobrimTest" configurationId="JUnit" />
     </history-entry>
@@ -342,6 +331,21 @@
       <configuration name="Tests.odobrimTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Tests_odobrimTest - 2019.06.02 at 16h 45m 09s.xml">
+      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_odobrimTest - 2019.06.02 at 16h 52m 12s.xml">
+      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_odobrimTest - 2019.06.02 at 16h 59m 42s.xml">
+      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_odobrimTest - 2019.06.02 at 17h 00m 57s.xml">
+      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_odobrimTest - 2019.06.02 at 17h 12m 30s.xml">
+      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_odobrimTest - 2019.06.02 at 18h 22m 19s.xml">
       <configuration name="Tests.odobrimTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -435,26 +439,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="29" column="117" selection-start-line="29" selection-start-column="117" selection-end-line="29" selection-end-column="117" />
+        <state relative-caret-position="300">
+          <caret line="107" column="42" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Tests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="98" column="25" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
+        <state relative-caret-position="130">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
           </folding>
         </state>
       </provider>
