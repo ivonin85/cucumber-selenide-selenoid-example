@@ -26,6 +26,9 @@ public class Odobrim extends Methods {
     public WebElement selectTime(){
         return id("period");
     }
+    public void button(){
+        className(".sc-hqyNC.ga_btn_podbor_credit.LandingFormstyled__LandingFormButton-sc-1tfivmc-3.doHXgy").click();
+    }
     // если 0 то редактируем сумму, а если 1 то редактируем срок кредита
     public WebElement clickEdit(int num){
         return listByCssSelector("[d='M11.2922 1.1587L10.8184 1.63257L14.2539 5.06811L14.7278 4.59424L11.2922 1.1587Z']").get(num);

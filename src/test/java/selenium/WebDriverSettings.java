@@ -1,5 +1,6 @@
 package selenium;
 
+import org.junit.After;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 

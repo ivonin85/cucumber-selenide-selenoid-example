@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57a2387e-2a31-4551-bd7d-c4721cde4730" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/Tests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/pages/GoogleSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/pages/GoogleSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/pages/GoogleTranslate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/pages/GoogleTranslate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="110" column="46" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="46" />
+            <state relative-caret-position="300">
+              <caret line="108" column="10" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,10 +40,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="283">
+              <caret line="29" column="117" selection-start-line="29" selection-start-column="117" selection-end-line="29" selection-end-column="117" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
                 <element signature="e#508#509#0" expanded="true" />
                 <element signature="e#637#638#0" expanded="true" />
                 <element signature="e#672#673#0" expanded="true" />
@@ -119,10 +115,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/WeatherTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/GooglePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/Methods.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/Tests.java" />
       </list>
@@ -193,7 +189,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559481873475" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559483053045" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../yandex" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -320,21 +316,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_odobrimTest - 2019.06.02 at 14h 43m 37s.xml">
-      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_odobrimTest - 2019.06.02 at 14h 49m 16s.xml">
-      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_odobrimTest - 2019.06.02 at 14h 50m 19s.xml">
-      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_odobrimTest - 2019.06.02 at 14h 55m 49s.xml">
-      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_odobrimTest - 2019.06.02 at 14h 57m 16s.xml">
-      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Tests_odobrimTest - 2019.06.02 at 14h 59m 45s.xml">
       <configuration name="Tests.odobrimTest" configurationId="JUnit" />
     </history-entry>
@@ -348,6 +329,21 @@
       <configuration name="Tests.odobrimTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Tests_odobrimTest - 2019.06.02 at 16h 16m 53s.xml">
+      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_odobrimTest - 2019.06.02 at 16h 22m 52s.xml">
+      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_odobrimTest - 2019.06.02 at 16h 25m 21s.xml">
+      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_odobrimTest - 2019.06.02 at 16h 31m 12s.xml">
+      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_odobrimTest - 2019.06.02 at 16h 35m 50s.xml">
+      <configuration name="Tests.odobrimTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_odobrimTest - 2019.06.02 at 16h 43m 06s.xml">
       <configuration name="Tests.odobrimTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -392,16 +388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Methods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -409,13 +395,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -441,12 +420,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        <state relative-caret-position="236">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="29" column="117" selection-start-line="29" selection-start-column="117" selection-end-line="29" selection-end-column="117" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
             <element signature="e#508#509#0" expanded="true" />
             <element signature="e#637#638#0" expanded="true" />
             <element signature="e#672#673#0" expanded="true" />
@@ -456,8 +453,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="110" column="46" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="46" />
+        <state relative-caret-position="300">
+          <caret line="108" column="10" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

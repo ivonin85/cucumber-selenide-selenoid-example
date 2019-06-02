@@ -7,7 +7,7 @@ import selenium.pages.GoogleSearch;
 import selenium.pages.GoogleTranslate;
 import selenium.pages.Odobrim;
 
-public class Tests {
+public class Tests extends WebDriverSettings{
     private WebDriverSettings settings;
     private ChromeDriver driver;
     private String key = "Погода в Москве";
@@ -105,7 +105,8 @@ public class Tests {
         odobrim.clickEdit(0);
         odobrim.selectAmount(amuont);
         odobrim.clickEdit(1);
-        odobrim.selectTime(time);
+        odobrim.selectTime(time).submit();
+        //odobrim.button();
         System.out.println(odobrim.selectAmount().getAttribute("value"));
         System.out.println(odobrim.selectTime().getAttribute("value"));
         System.out.println("----------///// End test /////----------");
