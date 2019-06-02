@@ -1,5 +1,6 @@
 package selenium;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 import selenium.pages.GoogleSearch;
@@ -82,13 +83,21 @@ public class Tests {
         GoogleTranslate googleTranslate = new GoogleTranslate(driver);
         String key = "Какая погода в Москве?";
         String language = "английский";
+        String originalText = "What is the weather in Moscow?1";
         System.out.println("----------///// Start test /////----------");
         driver.get("https://translate.google.com/");
         googleTranslate.sendText().sendKeys(key);
         googleTranslate.selLang(language);
         //googleTranslate.selectLanguage();
         Thread.sleep(1500);
+        try {
+            Assert.assertTrue(originalText.equals(googleTranslate.getText().getText()));
+        }
+        catch(AssertionError as) {
+            System.err.println("Текст не соответствует");
+        }
         System.out.println(googleTranslate.getText().getText());
+
         System.out.println("----------///// End test /////----------");
         driver.quit();
 
