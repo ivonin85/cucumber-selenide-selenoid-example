@@ -7,7 +7,7 @@ import selenium.pages.GoogleSearch;
 import selenium.pages.GoogleTranslate;
 import selenium.pages.Odobrim;
 
-public class Tests extends WebDriverSettings{
+public class Tests {
     private WebDriverSettings settings;
     private ChromeDriver driver;
     private String key = "Погода в Москве";
@@ -95,8 +95,8 @@ public class Tests extends WebDriverSettings{
     }
 
     @Test
-    public void odobrimTest() throws InterruptedException {
-        String time = "60";
+    public void odobrimTest() {
+        String time = "88";
         String amuont = "350000";
         Odobrim odobrim = new Odobrim(driver);
 
@@ -106,7 +106,6 @@ public class Tests extends WebDriverSettings{
         odobrim.selectAmount(amuont);
         odobrim.clickEdit(1);
         odobrim.selectTime(time).submit();
-        //odobrim.button();
         System.out.println(odobrim.selectAmount().getAttribute("value"));
         System.out.println(odobrim.selectTime().getAttribute("value"));
         System.out.println("----------///// End test /////----------");
