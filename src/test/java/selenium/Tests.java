@@ -105,7 +105,7 @@ public class Tests {
         odobrim.clickEdit(0);
         odobrim.selectAmount(amuont);
         odobrim.clickEdit(1);
-        odobrim.selectTime(time).submit();
+        odobrim.selectTime(time);
         System.out.println(odobrim.selectAmount().getAttribute("value"));
         System.out.println(odobrim.selectTime().getAttribute("value"));
         System.out.println("----------///// End test /////----------");

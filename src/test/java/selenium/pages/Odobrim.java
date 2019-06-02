@@ -19,6 +19,7 @@ public class Odobrim extends Methods {
     }
     public void selectTime(String key){
         id("period").sendKeys(Keys.chord(Keys.CONTROL, "a"), key);
+        id("period").submit();
     }
     public WebElement selectTime(){
         return id("period");
