@@ -19,18 +19,15 @@ public class GoogleSearch extends Methods {
 
     }
 
-    public void webelementList(){
-
+    public void listOfTitles(){
         listByClassName("LC20lb");
         for (WebElement element: listByClassName("LC20lb"))
             System.out.println(element.getText());
     }
 
-    public void showGoogle (String name, String key){
-
-        //findByNameSendKeyAndClikcEnter(name, key);
-        name(name).sendKeys(key);
-        name(name).submit();
+    public void showGoogle (String key){
+        name("q").sendKeys(key);
+        name("q").submit();
     }
     public String showTemperature(){
 

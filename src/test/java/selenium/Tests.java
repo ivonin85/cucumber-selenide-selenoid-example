@@ -5,103 +5,111 @@ import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 import selenium.pages.GoogleSearch;
 import selenium.pages.GoogleTranslate;
+import selenium.pages.Odobrim;
 
 public class Tests {
     private WebDriverSettings settings;
     private ChromeDriver driver;
-    String key = "Погода в Москве";
-    String url = "https://www.google.com/";
+    private String key = "Погода в Москве";
+    private String url = "https://www.google.com/";
+    private String searchQuery = "Усы Пескова";
+    private String language = "английский";
+    private String textToTranslate = "Какая погода в Москве?";
+    private String originalText = "What is the weather in Moscow?";
 
-    public Tests(){
+    public Tests() {
         this.settings = new WebDriverSettings();
         this.driver = this.settings.driver();
     }
+
     @Test
-    public void weatherTest(){
+    public void weatherTest() {
         GoogleSearch googlePage = new GoogleSearch(driver);
         driver.get(url);
         googlePage.weatherSearch(key);
         googlePage.weatherResult();
-        driver.get("https://api.telegram.org/bot869787181:AAF-0rzFP1Hi_KC5PzEtUAdiMVYEIq1FSPI/sendMessage?chat_id=@SeleniumI&text=" + key + " " + googlePage.weatherResult() +"°C");
+        driver.get("https://api.telegram.org/bot869787181:AAF-0rzFP1Hi_KC5PzEtUAdiMVYEIq1FSPI/sendMessage?chat_id=@SeleniumI&text=" + key + " " + googlePage.weatherResult() + "°C");
         driver.quit();
-
     }
+
     @Test
-    public void googleTest(){
+    public void googleTest() {
         GoogleSearch google = new GoogleSearch(driver);
-        String name = "q";
-        String key = "Усы Пескова";
         System.out.println("----------///// Start test /////----------");
         driver.get("https://www.google.ru/");
         // ищем что-то
-        google.showGoogle(name, key);
+        google.showGoogle(searchQuery);
         // выводим все заголовки со страницы
-        google.webelementList();
+        google.listOfTitles();
         System.out.println("----------///// End test /////----------");
         driver.quit();
-
     }
+
     @Test
-    public void googleTemperatureMoscow(){
+    public void googleTemperatureMoscow() {
         GoogleSearch google = new GoogleSearch(driver);
-        String name = "q";
         String key = "Погода в Москве";
         System.out.println("----------///// Start test /////----------");
         driver.get("https://www.google.ru/");
-        // ищем что-то
-        google.showGoogle(name, key);
+        google.showGoogle(key);
         System.out.println((key + " " + google.showTemperature() + " °C"));
         google.displayTemperature(key + " " + google.showTemperature() + " °C");
         System.out.println("----------///// End test /////----------");
         driver.quit();
-
     }
 
     @Test
-    public void googleTemperatureVolgograd(){
+    public void googleTemperatureVolgograd() {
         GoogleSearch google = new GoogleSearch(driver);
-        String name = "q";
         String key = "Погода в Волгограде";
         System.out.println("----------///// Start test /////----------");
         driver.get("https://www.google.ru/");
-        // ищем что-то
-        google.showGoogle(name, key);
+        google.showGoogle(key);
         System.out.println((key + " " + google.showTemperature() + " °C"));
         google.displayTemperature(key + " " + google.showTemperature() + " °C");
         System.out.println("----------///// End test /////----------");
         driver.quit();
-
     }
 
     /**
-     тест заходит на translate.google.com вводт слово на английском,
-     забирает перевод на русском и выводит в консоль
+     * тест заходит на translate.google.com вводт слово на английском,
+     * забирает перевод на русском и выводит в консоль
      **/
-
     @Test
-    public void googleTranslate() throws InterruptedException{
+    public void googleTranslate() throws InterruptedException {
         GoogleTranslate googleTranslate = new GoogleTranslate(driver);
-        String key = "Какая погода в Москве?";
-        String language = "английский";
-        String originalText = "What is the weather in Moscow?";
         System.out.println("----------///// Start test /////----------");
         driver.get("https://translate.google.com/");
-        googleTranslate.sendText().sendKeys(key);
-        googleTranslate.selLang(language);
-        //googleTranslate.selectLanguage();
+        googleTranslate.sendText().sendKeys(textToTranslate);
+        googleTranslate.selectLanguage(language);
         Thread.sleep(1500);
         try {
             Assert.assertTrue(originalText.equals(googleTranslate.getText().getText()));
-        }
-        catch(AssertionError as) {
+        } catch (AssertionError as) {
             as.printStackTrace();
             System.err.println(" === /// Текст не соответствует ///===");
         }
         System.out.println(googleTranslate.getText().getText());
-
         System.out.println("----------///// End test /////----------");
         driver.quit();
+    }
 
+    @Test
+    public void odobrimTest() throws InterruptedException {
+        String time = "60";
+        String amuont = "350000";
+        Odobrim odobrim = new Odobrim(driver);
+
+        System.out.println("----------///// Start test /////----------");
+        driver.get("https://odobrim.ru/cash");
+        odobrim.clickEdit(0);
+        odobrim.selectAmount(amuont);
+        odobrim.clickEdit(1);
+        odobrim.selectTime(time);
+        System.out.println(odobrim.selectAmount().getAttribute("value"));
+        System.out.println(odobrim.selectTime().getAttribute("value"));
+        System.out.println("----------///// End test /////----------");
+        //driver.quit();
     }
 
 }
