@@ -17,7 +17,7 @@ public class Odobrim extends Methods {
         return id("amount");
     }
     public void selectTime(String key){
-        id("period").sendKeys(Keys.HOME, Keys.chord(Keys.SHIFT, Keys.END), key);
+        id("period").sendKeys(Keys.chord(Keys.CONTROL, "a"), key);
         id("period").submit();
     }
     public WebElement selectTime(){
@@ -28,6 +28,10 @@ public class Odobrim extends Methods {
         return listByCssSelector("[d='M11.2922 1.1587L10.8184 1.63257L14.2539 5.06811L14.7278 4.59424L11.2922 1.1587Z']").get(num);
     }
     public void clickToAmount(){
+        id("amount").click();
+
+    }
+    public void clickToTime(){
         id("period").click();
 
     }

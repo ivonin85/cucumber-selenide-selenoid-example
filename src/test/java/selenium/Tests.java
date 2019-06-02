@@ -96,15 +96,15 @@ public class Tests {
 
     @Test
     public void odobrimTest() {
-        String time = "88";
-        String amuont = "350000";
+        String time = "76";
+        String amuont = "400000";
         Odobrim odobrim = new Odobrim(driver);
 
         System.out.println("----------///// Start test /////----------");
         driver.get("https://odobrim.ru/cash");
         odobrim.clickToAmount();
         odobrim.selectAmount(amuont);
-        odobrim.clickEdit(1);
+        odobrim.clickToTime();
         odobrim.selectTime(time);
         System.out.println(odobrim.selectAmount().getAttribute("value"));
         System.out.println(odobrim.selectTime().getAttribute("value"));
