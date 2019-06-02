@@ -26,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="96" column="32" lean-forward="true" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+            <state relative-caret-position="300">
+              <caret line="95" column="34" lean-forward="true" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,7 +170,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559435211258" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559463630290" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../yandex" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -294,18 +294,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_googleTranslate - 2019.06.02 at 02h 03m 37s.xml">
-      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_googleTranslate - 2019.06.02 at 02h 10m 54s.xml">
-      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_googleTranslate - 2019.06.02 at 02h 11m 37s.xml">
-      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Tests_googleTranslate - 2019.06.02 at 02h 42m 35s.xml">
-      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Tests_googleTranslate - 2019.06.02 at 03h 07m 19s.xml">
       <configuration name="Tests.googleTranslate" configurationId="JUnit" />
     </history-entry>
@@ -322,6 +310,18 @@
       <configuration name="Tests.googleTranslate" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Tests_googleTranslate - 2019.06.02 at 03h 25m 24s.xml">
+      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_googleTranslate - 2019.06.02 at 03h 30m 42s.xml">
+      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_googleTranslate - 2019.06.02 at 03h 31m 48s.xml">
+      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_googleTranslate - 2019.06.02 at 03h 32m 35s.xml">
+      <configuration name="Tests.googleTranslate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_googleTranslate - 2019.06.02 at 11h 17m 52s.xml">
       <configuration name="Tests.googleTranslate" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -417,8 +417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="96" column="32" lean-forward="true" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+        <state relative-caret-position="300">
+          <caret line="95" column="34" lean-forward="true" selection-start-line="95" selection-start-column="34" selection-end-line="95" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

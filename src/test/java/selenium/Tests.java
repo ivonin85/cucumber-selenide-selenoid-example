@@ -83,7 +83,7 @@ public class Tests {
         GoogleTranslate googleTranslate = new GoogleTranslate(driver);
         String key = "Какая погода в Москве?";
         String language = "английский";
-        String originalText = "What is the weather in Moscow?1";
+        String originalText = "What is the weather in Moscow?";
         System.out.println("----------///// Start test /////----------");
         driver.get("https://translate.google.com/");
         googleTranslate.sendText().sendKeys(key);
@@ -94,7 +94,8 @@ public class Tests {
             Assert.assertTrue(originalText.equals(googleTranslate.getText().getText()));
         }
         catch(AssertionError as) {
-            System.err.println("Текст не соответствует");
+            as.printStackTrace();
+            System.err.println(" === /// Текст не соответствует ///===");
         }
         System.out.println(googleTranslate.getText().getText());
 
