@@ -102,7 +102,7 @@ public class Tests {
 
         System.out.println("----------///// Start test /////----------");
         driver.get("https://odobrim.ru/cash");
-        odobrim.clickEdit(0);
+        odobrim.clickToAmount();
         odobrim.selectAmount(amuont);
         odobrim.clickEdit(1);
         odobrim.selectTime(time);
