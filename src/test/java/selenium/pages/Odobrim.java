@@ -11,8 +11,7 @@ public class Odobrim extends Methods {
         super(driver);
     }
     public void selectAmount(String key){
-        id("amount").sendKeys(Keys.CONTROL+"a");
-        id("amount").sendKeys(key);
+        id("amount").sendKeys(Keys.HOME, Keys.chord(Keys.SHIFT, Keys.END), key);
     }
     public WebElement selectAmount(){
         return id("amount");
