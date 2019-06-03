@@ -77,7 +77,7 @@ public class Tests extends WebDriverSettings {
     @Test
     public void odobrimTest() {
         String time = "55";
-        String timeStryng = "4 года 7 мес";
+        String timeString = "4 года 7 мес";
         String amuont = "700 000";
         Odobrim odobrim = new Odobrim(driver);
         driver.get("https://odobrim.ru/cash");
@@ -94,7 +94,7 @@ public class Tests extends WebDriverSettings {
             System.err.println(" === /// Сума не совпадает ///===");
         }
         try {
-            Assert.assertTrue(timeStryng.equals(timeValue));
+            Assert.assertTrue(timeString.equals(timeValue));
         } catch (AssertionError as) {
             as.printStackTrace();
             System.err.println(" === /// Срок не совпадает ///===");

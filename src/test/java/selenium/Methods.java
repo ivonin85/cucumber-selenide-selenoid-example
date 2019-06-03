@@ -110,13 +110,6 @@ public class Methods {
         // выбираем из списка элемент по value
         selectOrganization.selectByValue(Value);
     }
-
-    // даннаый метод позволяет при помощи Javascript
-    public void scroll() {
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("window.scroll(0, 450)");
-    }
-
     // воспроизводит javaScript код
     public void javaScript(String javascript) {
         JavascriptExecutor jse = (JavascriptExecutor) driver;

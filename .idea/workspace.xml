@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="57a2387e-2a31-4551-bd7d-c4721cde4730" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/Methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/Tests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Tests.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1600">
-              <caret line="100" column="81" lean-forward="true" selection-start-line="100" selection-start-column="81" selection-end-line="100" selection-end-column="81" />
+            <state relative-caret-position="185">
+              <caret line="96" column="60" lean-forward="true" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="624">
@@ -71,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Methods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="13" column="33" selection-end-line="128" />
+            <state relative-caret-position="1360">
+              <caret line="85" column="6" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,10 +77,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/settings/WebDriverSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="25" selection-end-line="39" />
+            <state relative-caret-position="112">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,12 +112,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/WeatherTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/GooglePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/Methods.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/Tests.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/Tests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/Methods.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/tests/Tests.java" />
       </list>
     </option>
   </component>
@@ -179,7 +176,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="selenium" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -190,7 +187,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559542456767" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559543475205" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../biblioOnline" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -214,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.googleTemperatureVolgograd">
+  <component name="RunManager" selected="JUnit.Tests.odobrimTest">
     <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="example" />
       <extension name="coverage">
@@ -296,11 +293,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests.odobrimTest" />
         <item itemvalue="JUnit.Tests.googleTemperatureVolgograd" />
         <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.weatherTest" />
         <item itemvalue="JUnit.Tests.googleTranslate" />
-        <item itemvalue="JUnit.Tests.odobrimTest" />
       </list>
     </recent_temporary>
   </component>
@@ -397,26 +394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Methods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="33" selection-end-line="128" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -427,10 +404,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Tests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1600">
-          <caret line="100" column="81" lean-forward="true" selection-start-line="100" selection-start-column="81" selection-end-line="100" selection-end-column="81" />
+        <state relative-caret-position="624">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/settings/WebDriverSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -447,13 +435,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Methods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="26" />
+        <state relative-caret-position="1360">
+          <caret line="85" column="6" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="96" column="60" lean-forward="true" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
