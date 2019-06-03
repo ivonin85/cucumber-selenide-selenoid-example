@@ -7,6 +7,7 @@ import selenium.pages.GoogleSearch;
 import selenium.pages.GoogleTranslate;
 import selenium.pages.Odobrim;
 
+
 public class Tests {
     private WebDriverSettings settings;
     private ChromeDriver driver;
@@ -96,18 +97,32 @@ public class Tests {
 
     @Test
     public void odobrimTest() {
-        String time = "76";
-        String amuont = "400000";
+        String time = "55";
+        String timeStryng = "4 года 7 мес";
+        String amuont = "500 000";
         Odobrim odobrim = new Odobrim(driver);
-
         System.out.println("----------///// Start test /////----------");
         driver.get("https://odobrim.ru/cash");
         odobrim.clickToAmount();
         odobrim.selectAmount(amuont);
         odobrim.clickToTime();
         odobrim.selectTime(time);
-        System.out.println(odobrim.selectAmount().getAttribute("value"));
-        System.out.println(odobrim.selectTime().getAttribute("value"));
+        String amountValue = odobrim.selectAmount().getAttribute("value");
+        String timeValue = odobrim.selectTime().getAttribute("value");
+        try {
+            Assert.assertTrue(amountValue.substring(0, (amountValue.length() - 2)).equals(amuont));
+        } catch (AssertionError as) {
+            as.printStackTrace();
+            System.err.println(" === /// Сума не совпадает ///===");
+        }
+        try {
+            Assert.assertTrue(timeStryng.equals(timeValue));
+        } catch (AssertionError as) {
+            as.printStackTrace();
+            System.err.println(" === /// Срок не совпадает ///===");
+        }
+        System.out.println(amountValue.substring(0, (amountValue.length() - 2)));
+        System.out.println(timeValue);
         System.out.println("----------///// End test /////----------");
         //driver.quit();
     }
