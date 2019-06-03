@@ -83,7 +83,7 @@ public class Methods {
     }
 
     /**
-     * - проверяем существование элементв
+     * - проверяем существование элемента
      **/
     public boolean existsElementByCssSelector(String cssSelector) {
         try {
@@ -117,18 +117,6 @@ public class Methods {
         jse.executeScript("window.scroll(0, 450)");
     }
 
-    public void selectPickUpNumber(String pointNumber) {
-        JavascriptExecutor executor = (JavascriptExecutor) driver;
-        try {
-            executor.executeScript("setTimeout(function(){complex_order.selectPickUpOnMap('" + pointNumber + "');}, 20000);");
-
-        } catch (NoAlertPresentException ex) {
-            System.out.println("Alert not found");
-        }
-        xPath("//*[@id=\"y-map\"]/ymaps/ymaps/ymaps/ymaps[4]/ymaps[4]/ymaps/div/div[1]/button").click();
-
-
-    }
     // воспроизводит javaScript код
     public void javaScript(String javascript) {
         JavascriptExecutor jse = (JavascriptExecutor) driver;

@@ -1,4 +1,4 @@
-package selenium;
+package selenium.settings;
 
 import org.junit.After;
 import org.junit.Before;
@@ -7,8 +7,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class WebDriverSettings {
     public ChromeDriver driver;
+
     @Before
-    public void setUp(){
+    public void setUp() {
         String chromeDriver;
         String windows7 = "Windows 7";
         String windows10 = "Windows 10";
@@ -28,8 +29,9 @@ public class WebDriverSettings {
         System.out.println("----------///// Start test /////----------");
 
     }
+
     @After
-    public void closed(){
+    public void closed() {
         System.out.println("----------///// End test /////----------");
         //driver.quit();
     }

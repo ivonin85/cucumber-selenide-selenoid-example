@@ -1,19 +1,19 @@
-package selenium;
+package selenium.tests;
 
 import org.junit.Assert;
 import org.junit.Test;
+import selenium.settings.WebDriverSettings;
 import selenium.pages.GoogleSearch;
 import selenium.pages.GoogleTranslate;
 import selenium.pages.Odobrim;
 
 
-public class Tests extends WebDriverSettings{
+public class Tests extends WebDriverSettings {
     private String key = "Погода в Москве";
     private String searchQuery = "Усы Пескова";
     private String language = "английский";
     private String textToTranslate = "Какая погода в Москве?";
     private String originalText = "What is the weather in Moscow?";
-
 
 
     @Test

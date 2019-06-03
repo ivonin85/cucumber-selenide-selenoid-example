@@ -6,6 +6,8 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/Tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-448">
-              <caret line="14" column="67" lean-forward="true" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+            <state relative-caret-position="1600">
+              <caret line="100" column="81" lean-forward="true" selection-start-line="100" selection-start-column="81" selection-end-line="100" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,10 +32,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+            <state relative-caret-position="384">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,10 +44,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="41" column="26" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#398#399#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="35" column="38" selection-end-line="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Methods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="131" column="35" selection-start-line="131" selection-start-column="35" selection-end-line="131" selection-end-column="35" />
+            <state relative-caret-position="208">
+              <caret line="13" column="33" selection-end-line="128" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+            <state relative-caret-position="400">
+              <caret line="25" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,12 +116,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/WeatherTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/GooglePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/Methods.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/Tests.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/Tests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/Methods.java" />
       </list>
     </option>
   </component>
@@ -163,7 +190,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559541600671" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559542456767" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../biblioOnline" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -192,12 +219,12 @@
       <module name="example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="selenium.*" />
+          <option name="PATTERN" value="selenium.settings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.Tests" />
+      <option name="PACKAGE_NAME" value="selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.Tests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -207,12 +234,12 @@
       <module name="example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="selenium.*" />
+          <option name="PATTERN" value="selenium.settings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.Tests" />
+      <option name="PACKAGE_NAME" value="selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.Tests" />
       <option name="METHOD_NAME" value="googleTemperatureVolgograd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -223,12 +250,12 @@
       <module name="example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="selenium.*" />
+          <option name="PATTERN" value="selenium.settings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.Tests" />
+      <option name="PACKAGE_NAME" value="selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.Tests" />
       <option name="METHOD_NAME" value="googleTranslate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -239,12 +266,12 @@
       <module name="example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="selenium.*" />
+          <option name="PATTERN" value="selenium.settings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.Tests" />
+      <option name="PACKAGE_NAME" value="selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.Tests" />
       <option name="METHOD_NAME" value="odobrimTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -255,12 +282,12 @@
       <module name="example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="selenium.*" />
+          <option name="PATTERN" value="selenium.settings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.Tests" />
+      <option name="PACKAGE_NAME" value="selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.Tests" />
       <option name="METHOD_NAME" value="weatherTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -326,7 +353,7 @@
     <frame x="-4" y="-4" width="1448" height="864" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -335,7 +362,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32841823" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32841823" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -370,38 +397,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Methods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="2" selection-end-line="40" />
+        <state relative-caret-position="208">
+          <caret line="13" column="33" selection-end-line="128" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/WebDriverSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+        <state relative-caret-position="400">
+          <caret line="25" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -410,8 +419,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/GoogleSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+        <state relative-caret-position="560">
+          <caret line="35" column="38" selection-end-line="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -420,20 +429,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Tests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-448">
-          <caret line="14" column="67" lean-forward="true" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
+        <state relative-caret-position="1600">
+          <caret line="100" column="81" lean-forward="true" selection-start-line="100" selection-start-column="81" selection-end-line="100" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/Methods.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/GoogleTranslate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="131" column="35" selection-start-line="131" selection-start-column="35" selection-end-line="131" selection-end-column="35" />
+        <state relative-caret-position="384">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/Odobrim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
           </folding>
         </state>
       </provider>
