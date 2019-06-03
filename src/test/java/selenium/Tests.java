@@ -99,7 +99,7 @@ public class Tests {
     public void odobrimTest() {
         String time = "55";
         String timeStryng = "4 года 7 мес";
-        String amuont = "500 000";
+        String amuont = "700 000";
         Odobrim odobrim = new Odobrim(driver);
         System.out.println("----------///// Start test /////----------");
         driver.get("https://odobrim.ru/cash");
