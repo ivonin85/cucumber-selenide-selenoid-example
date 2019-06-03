@@ -10,42 +10,40 @@ public class GoogleSearch extends Methods {
         super(driver);
     }
 
-    public void weatherSearch(String key){
+    public void weatherSearch(String key) {
         name("q").sendKeys(key);
         name("q").submit();
     }
-    public String weatherResult(){
+
+    public String weatherResult() {
         return id("wob_tm").getText();
 
     }
 
-    public void listOfTitles(){
+    public void listOfTitles() {
         listByClassName("LC20lb");
-        for (WebElement element: listByClassName("LC20lb"))
+        for (WebElement element : listByClassName("LC20lb"))
             System.out.println(element.getText());
     }
 
-    public void showGoogle (String key){
+    public void showGoogle(String key) {
         name("q").sendKeys(key);
         name("q").submit();
     }
-    public String showTemperature(){
+
+    public String showTemperature() {
 
         return id("wob_tm").getText();
     }
 
-    public void displayTemperature(String alert){
+    public void displayTemperature(String alert) {
         try {
-            jsAlert(alert);
+            javaScript("alert('" + alert + "');");
         } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
-
-
-
-
 
 
 }
