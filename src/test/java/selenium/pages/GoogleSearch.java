@@ -36,7 +36,7 @@ public class GoogleSearch extends Methods {
 
     public void displayTemperature(String alert){
         try {
-            jsAlert(alert);
+            javaScript("alert('" + alert + "');");
         } catch (Exception e) {
             e.printStackTrace();
         }

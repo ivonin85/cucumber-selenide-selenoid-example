@@ -2,74 +2,56 @@ package selenium;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.chrome.ChromeDriver;
 import selenium.pages.GoogleSearch;
 import selenium.pages.GoogleTranslate;
 import selenium.pages.Odobrim;
 
 
-public class Tests {
-    private WebDriverSettings settings;
-    private ChromeDriver driver;
+public class Tests extends WebDriverSettings{
     private String key = "Погода в Москве";
-    private String url = "https://www.google.com/";
     private String searchQuery = "Усы Пескова";
     private String language = "английский";
     private String textToTranslate = "Какая погода в Москве?";
     private String originalText = "What is the weather in Moscow?";
 
-    public Tests() {
-        this.settings = new WebDriverSettings();
-        this.driver = this.settings.driver();
-    }
+
 
     @Test
     public void weatherTest() {
         GoogleSearch googlePage = new GoogleSearch(driver);
-        driver.get(url);
+        driver.get("https://www.google.com/");
         googlePage.weatherSearch(key);
         googlePage.weatherResult();
         driver.get("https://api.telegram.org/bot869787181:AAF-0rzFP1Hi_KC5PzEtUAdiMVYEIq1FSPI/sendMessage?chat_id=@SeleniumI&text=" + key + " " + googlePage.weatherResult() + "°C");
-        driver.quit();
     }
 
     @Test
     public void googleTest() {
         GoogleSearch google = new GoogleSearch(driver);
-        System.out.println("----------///// Start test /////----------");
         driver.get("https://www.google.ru/");
-        // ищем что-то
         google.showGoogle(searchQuery);
-        // выводим все заголовки со страницы
         google.listOfTitles();
-        System.out.println("----------///// End test /////----------");
-        driver.quit();
     }
 
     @Test
     public void googleTemperatureMoscow() {
         GoogleSearch google = new GoogleSearch(driver);
         String key = "Погода в Москве";
-        System.out.println("----------///// Start test /////----------");
         driver.get("https://www.google.ru/");
         google.showGoogle(key);
         System.out.println((key + " " + google.showTemperature() + " °C"));
         google.displayTemperature(key + " " + google.showTemperature() + " °C");
-        System.out.println("----------///// End test /////----------");
-        driver.quit();
+
     }
 
     @Test
     public void googleTemperatureVolgograd() {
         GoogleSearch google = new GoogleSearch(driver);
         String key = "Погода в Волгограде";
-        System.out.println("----------///// Start test /////----------");
         driver.get("https://www.google.ru/");
         google.showGoogle(key);
         System.out.println((key + " " + google.showTemperature() + " °C"));
         google.displayTemperature(key + " " + google.showTemperature() + " °C");
-        System.out.println("----------///// End test /////----------");
-        driver.quit();
     }
 
     /**
@@ -79,7 +61,6 @@ public class Tests {
     @Test
     public void googleTranslate() throws InterruptedException {
         GoogleTranslate googleTranslate = new GoogleTranslate(driver);
-        System.out.println("----------///// Start test /////----------");
         driver.get("https://translate.google.com/");
         googleTranslate.sendText().sendKeys(textToTranslate);
         googleTranslate.selectLanguage(language);
@@ -91,8 +72,6 @@ public class Tests {
             System.err.println(" === /// Текст не соответствует ///===");
         }
         System.out.println(googleTranslate.getText().getText());
-        System.out.println("----------///// End test /////----------");
-        driver.quit();
     }
 
     @Test
@@ -101,7 +80,6 @@ public class Tests {
         String timeStryng = "4 года 7 мес";
         String amuont = "700 000";
         Odobrim odobrim = new Odobrim(driver);
-        System.out.println("----------///// Start test /////----------");
         driver.get("https://odobrim.ru/cash");
         odobrim.clickToAmount();
         odobrim.selectAmount(amuont);
@@ -123,8 +101,6 @@ public class Tests {
         }
         System.out.println(amountValue.substring(0, (amountValue.length() - 2)));
         System.out.println(timeValue);
-        System.out.println("----------///// End test /////----------");
-        //driver.quit();
     }
 
 }
