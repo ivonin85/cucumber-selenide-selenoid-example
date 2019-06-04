@@ -23,9 +23,9 @@ public class WebDriverSettings {
         System.setProperty("webdriver.chrome.driver", chromeDriver);
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
+        this.driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        this.driver = new ChromeDriver();
     }
 
     @After
