@@ -11,12 +11,10 @@ public class GoogleTranslate extends Methods {
     }
 
     public WebElement sendText() {
-
         return id("source");
     }
 
     public WebElement getText() {
-
         return cssSelector(".tlid-translation.translation");
     }
 

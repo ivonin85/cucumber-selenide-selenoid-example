@@ -14,27 +14,22 @@ public class WebDriverSettings {
     public ChromeDriver driver;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         String chromeDriver;
         String windows = "Windows";
         if (System.getProperty("os.name").contains(windows)) {
             chromeDriver = System.getProperty("user.dir") + "/chromedriver/chromedriver.exe";
         } else chromeDriver = System.getProperty("user.dir") + "/chromedriver/chromedriver";
         System.setProperty("webdriver.chrome.driver", chromeDriver);
-
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
-
-        this.driver = new ChromeDriver();
-
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-
+        this.driver = new ChromeDriver();
     }
 
     @After
     public void closed() {
         driver.quit();
     }
-
 }

@@ -7,7 +7,6 @@ import selenium.Methods;
 
 public class Odobrim extends Methods {
     public Odobrim(WebDriver driver) {
-
         super(driver);
     }
 
@@ -17,24 +16,19 @@ public class Odobrim extends Methods {
     }
 
     public WebElement amount() {
-
         return id("amount");
     }
 
     public void time(String key) {
         id("period").click();
         id("period").sendKeys(Keys.HOME, Keys.chord(Keys.SHIFT, Keys.END), key);
-        //id("period").submit();
     }
 
     public WebElement time() {
-
         return id("period");
     }
 
-    public void choiceFree(){
+    public void choiceFree() {
         cssSelector("[class='sc-hqyNC ga_btn_podbor_credit LandingFormstyled__LandingFormButton-sc-1tfivmc-3 doHXgy']").click();
     }
-
-
 }

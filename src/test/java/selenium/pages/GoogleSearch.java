@@ -6,7 +6,6 @@ import selenium.Methods;
 public class GoogleSearch extends Methods {
 
     public GoogleSearch(WebDriver driver) {
-
         super(driver);
     }
 
@@ -17,7 +16,6 @@ public class GoogleSearch extends Methods {
 
     public String weatherResult() {
         return id("wob_tm").getText();
-
     }
 
     public void listOfTitles() {
@@ -32,7 +30,6 @@ public class GoogleSearch extends Methods {
     }
 
     public String showTemperature() {
-
         return id("wob_tm").getText();
     }
 
@@ -42,10 +39,7 @@ public class GoogleSearch extends Methods {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
-
-
 }
 
 

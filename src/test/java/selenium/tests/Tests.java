@@ -15,7 +15,6 @@ public class Tests extends WebDriverSettings {
     private String textToTranslate = "Какая погода в Москве?";
     private String originalText = "What is the weather in Moscow?";
 
-
     @Test
     public void weatherTest() {
         GoogleSearch googlePage = new GoogleSearch(driver);
@@ -42,7 +41,6 @@ public class Tests extends WebDriverSettings {
         google.showGoogle(key);
         System.out.println((key + " " + google.showTemperature() + " °C"));
         google.displayTemperature(key + " " + google.showTemperature() + " °C");
-
     }
 
     @Test
@@ -56,8 +54,8 @@ public class Tests extends WebDriverSettings {
     }
 
     /**
-     тест заходит на translate.google.com вводт слово на английском,
-     забирает перевод на русском и выводит в консоль
+     * тест заходит на translate.google.com вводт слово на английском,
+     * забирает перевод на русском и выводит в консоль
      **/
     @Test
     public void googleTranslate() throws InterruptedException {
@@ -74,8 +72,9 @@ public class Tests extends WebDriverSettings {
         }
         System.out.println(googleTranslate.getText().getText());
     }
+
     /**
-     тест проверяет корректно ли в форме обрабатываются введенные значения
+     * тест проверяет корректно ли в форме обрабатываются введенные значения
      **/
     @Test
     public void odobrimTest() {
@@ -100,5 +99,4 @@ public class Tests extends WebDriverSettings {
             as.printStackTrace();
         }
     }
-
 }
