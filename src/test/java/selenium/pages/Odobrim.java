@@ -11,36 +11,29 @@ public class Odobrim extends Methods {
         super(driver);
     }
 
-    public void selectAmount(String key) {
+    public void amount(String key) {
+        id("amount").click();
         id("amount").sendKeys(Keys.HOME, Keys.chord(Keys.SHIFT, Keys.END), key);
     }
 
-    public WebElement selectAmount() {
+    public WebElement amount() {
+
         return id("amount");
     }
 
-    public void selectTime(String key) {
+    public void time(String key) {
+        id("period").click();
         id("period").sendKeys(Keys.HOME, Keys.chord(Keys.SHIFT, Keys.END), key);
-        id("period").submit();
+        //id("period").submit();
     }
 
-    public WebElement selectTime() {
+    public WebElement time() {
+
         return id("period");
     }
 
-    // если 0 то редактируем сумму, а если 1 то редактируем срок кредита
-    public WebElement clickEdit(int num) {
-        return listByCssSelector("[d='M11.2922 1.1587L10.8184 1.63257L14.2539 5.06811L14.7278 4.59424L11.2922 1.1587Z']").get(num);
-    }
-
-    public void clickToAmount() {
-        id("amount").click();
-
-    }
-
-    public void clickToTime() {
-        id("period").click();
-
+    public void choiceFree(){
+        cssSelector("[class='sc-hqyNC ga_btn_podbor_credit LandingFormstyled__LandingFormButton-sc-1tfivmc-3 doHXgy']").click();
     }
 
 

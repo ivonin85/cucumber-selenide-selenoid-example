@@ -4,12 +4,18 @@ import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.net.MalformedURLException;
+import java.net.URI;
 
 public class WebDriverSettings {
     public ChromeDriver driver;
 
     @Before
-    public void setUp() {
+    public void setUp() throws MalformedURLException {
+
         String chromeDriver;
         String windows7 = "Windows 7";
         String windows10 = "Windows 10";
@@ -21,7 +27,7 @@ public class WebDriverSettings {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
 
-        driver = new ChromeDriver();
+        this.driver = new ChromeDriver();
 
 
         driver.manage().deleteAllCookies();

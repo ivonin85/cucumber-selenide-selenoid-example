@@ -56,8 +56,8 @@ public class Tests extends WebDriverSettings {
     }
 
     /**
-     * тест заходит на translate.google.com вводт слово на английском,
-     * забирает перевод на русском и выводит в консоль
+     тест заходит на translate.google.com вводт слово на английском,
+     забирает перевод на русском и выводит в консоль
      **/
     @Test
     public void googleTranslate() throws InterruptedException {
@@ -74,31 +74,30 @@ public class Tests extends WebDriverSettings {
         }
         System.out.println(googleTranslate.getText().getText());
     }
-
+    /**
+     тест проверяет корректно ли в форме обрабатываются введенные значения
+     **/
     @Test
     public void odobrimTest() {
-        String time = "55";
-        String timeString = "4 года 7 мес";
+        String time = "54";
+        String timeString = "4 года 6 мес";
         String amuont = "700 000";
         Odobrim odobrim = new Odobrim(driver);
         driver.get("https://odobrim.ru/cash");
-        odobrim.clickToAmount();
-        odobrim.selectAmount(amuont);
-        odobrim.clickToTime();
-        odobrim.selectTime(time);
-        String amountValue = odobrim.selectAmount().getAttribute("value");
-        String timeValue = odobrim.selectTime().getAttribute("value");
+        odobrim.amount(amuont);
+        odobrim.time(time);
+        odobrim.choiceFree();
+        String amountValue = odobrim.amount().getAttribute("value");
+        String timeValue = odobrim.time().getAttribute("value");
         try {
             Assert.assertTrue(amountValue.substring(0, (amountValue.length() - 2)).equals(amuont));
         } catch (AssertionError as) {
             as.printStackTrace();
-            System.err.println(" === /// Сума не совпадает ///===");
         }
         try {
             Assert.assertTrue(timeString.equals(timeValue));
         } catch (AssertionError as) {
             as.printStackTrace();
-            System.err.println(" === /// Срок не совпадает ///===");
         }
         System.out.println(amountValue.substring(0, (amountValue.length() - 2)));
         System.out.println(timeValue);
