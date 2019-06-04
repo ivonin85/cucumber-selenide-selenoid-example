@@ -79,8 +79,8 @@ public class Tests extends WebDriverSettings {
      **/
     @Test
     public void odobrimTest() {
-        String time = "54";
-        String timeString = "4 года 6 мес";
+        String time = "56";
+        String timeString = "4 года 8 мес";
         String amuont = "700 000";
         Odobrim odobrim = new Odobrim(driver);
         driver.get("https://odobrim.ru/cash");
@@ -99,8 +99,6 @@ public class Tests extends WebDriverSettings {
         } catch (AssertionError as) {
             as.printStackTrace();
         }
-        System.out.println(amountValue.substring(0, (amountValue.length() - 2)));
-        System.out.println(timeValue);
     }
 
 }

@@ -14,12 +14,10 @@ public class WebDriverSettings {
     public ChromeDriver driver;
 
     @Before
-    public void setUp() throws MalformedURLException {
-
+    public void setUp(){
         String chromeDriver;
-        String windows7 = "Windows 7";
-        String windows10 = "Windows 10";
-        if (System.getProperty("os.name").equals(windows7) || System.getProperty("os.name").equals(windows10)) {
+        String windows = "Windows";
+        if (System.getProperty("os.name").contains(windows)) {
             chromeDriver = System.getProperty("user.dir") + "/chromedriver/chromedriver.exe";
         } else chromeDriver = System.getProperty("user.dir") + "/chromedriver/chromedriver";
         System.setProperty("webdriver.chrome.driver", chromeDriver);
@@ -29,16 +27,13 @@ public class WebDriverSettings {
 
         this.driver = new ChromeDriver();
 
-
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        System.out.println("----------///// Start test /////----------");
 
     }
 
     @After
     public void closed() {
-        System.out.println("----------///// End test /////----------");
         driver.quit();
     }
 
