@@ -2,10 +2,10 @@ package selenium.tests;
 
 import org.junit.Assert;
 import org.junit.Test;
+import selenium.pages.OdobrimCash;
 import selenium.settings.WebDriverSettings;
 import selenium.pages.GoogleSearch;
 import selenium.pages.GoogleTranslate;
-import selenium.pages.Odobrim;
 
 
 public class Tests extends WebDriverSettings {
@@ -81,13 +81,13 @@ public class Tests extends WebDriverSettings {
         String time = "56";
         String timeString = "4 года 8 мес";
         String amuont = "700 000";
-        Odobrim odobrim = new Odobrim(driver);
+        OdobrimCash odobrimCash = new OdobrimCash(driver);
         driver.get("https://odobrim.ru/cash");
-        odobrim.amount(amuont);
-        odobrim.time(time);
-        odobrim.choiceFree();
-        String amountValue = odobrim.amount().getAttribute("value");
-        String timeValue = odobrim.time().getAttribute("value");
+        odobrimCash.amount(amuont);
+        odobrimCash.time(time);
+        odobrimCash.choiceFree();
+        String amountValue = odobrimCash.amount().getAttribute("value");
+        String timeValue = odobrimCash.time().getAttribute("value");
         try {
             Assert.assertTrue(amountValue.substring(0, (amountValue.length() - 2)).equals(amuont));
         } catch (AssertionError as) {

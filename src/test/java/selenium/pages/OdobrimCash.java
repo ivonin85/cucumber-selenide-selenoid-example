@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import selenium.Methods;
 
-public class Odobrim extends Methods {
-    public Odobrim(WebDriver driver) {
+public class OdobrimCash extends Methods {
+    public OdobrimCash(WebDriver driver) {
         super(driver);
     }
 
